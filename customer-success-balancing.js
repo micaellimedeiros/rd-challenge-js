@@ -9,7 +9,7 @@ function customerSuccessBalancing(
   customers,
   customerSuccessAway
 ) {
-  /** Sorted list of available CSs and ordered */
+  /** Sorted list of available CSs in ascending order */
   const sortedAvailableCS = customerSuccess
     .filter((cs) => !customerSuccessAway.includes(cs.id))
     .sort((cs1, cs2) => cs1.score - cs2.score);
